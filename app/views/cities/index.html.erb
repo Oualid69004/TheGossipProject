@@ -1,0 +1,16 @@
+<h1>City</h1><br>
+
+<%= @cities.each do |city|   %>
+
+  <p><%= city.nom_ville %></p><br>
+
+
+  <p>
+    <a href="<%= city_path(city.id) %>" class="btn btn-primary">Show city</a>
+    <a href="<%= edit_city_path(city.id) %>" class="btn btn-secondary">Edite city</a>
+    <a href="<%= new_city_path(city.id) %>" class="btn btn-success">Create city</a>
+    <a href="<%= city_path(city.id) %>" class="btn btn-danger" data-confirm="are you sur do you want delete a city !?"
+       data-method="DELETE">Delete city</a>
+  </p>
+
+<% end %>

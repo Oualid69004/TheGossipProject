@@ -1,0 +1,18 @@
+<h1>Authors</h1><br>
+
+<%= @users.each do |user|   %>
+
+  <p><%=user.prenom %></p><br>
+  <p><%=user.nom %></p><br>
+  <p><%=user.description %></p><br>
+  <p><%=user.email %></p><br>
+  <p><%=user.age %></p><br>
+  <p>
+    <a href="<%= user_path(user.id) %>" class="btn btn-primary">Show Author</a>
+    <a href="<%= edit_user_path(user.id) %>" class="btn btn-secondary">Edite Author</a>
+    <a href="<%= new_user_path(user.id) %>" class="btn btn-success">Create Author</a>
+    <a href="<%= user_path(user.id) %>" class="btn btn-danger" data-confirm="are you sur do you want delete a author !?"
+       data-method="DELETE">Delete Author</a>
+  </p>
+
+<% end %>

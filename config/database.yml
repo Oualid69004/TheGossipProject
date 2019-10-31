@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: CrudGossip
+  pool: 5
+  username: walid
+  password: walid
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: CrudGossip
+  pool: 5
+  username: walid
+  password: walid
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: CrudGossip
+  pool: 5
+  username: walid
+  password: walid

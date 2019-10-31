@@ -1,0 +1,19 @@
+<h1>Create gossip</h1>
+<%= form_for @gossips do |f| %>
+  <div class="form-group">
+    <label >Titre de gossip :</label>
+    <%= f.text_field :titre, class:'form-control' %>
+  </div>
+  <div class="form-group">
+    <label >contenu de gossip :</label>
+    <%= f.text_area :contenu, class:'form-control' %>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-success">Create gossip</button><br>
+
+
+  </div>
+  <p><a href="<%=gossips_path %>"class="btn btn-primary">Return To Gossips</a></p>
+
+
+<%end %>
